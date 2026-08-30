@@ -1,0 +1,16 @@
+{
+  "rows": 67478,
+  "flagged_count": 57152,
+  "base_growth_rate": 0.24731023444678266,
+  "precision_at_10": 0.3,
+  "precision_at_50": 0.48,
+  "score_features": [
+    "gsc_impressions_90d",
+    "gsc_impressions_last_30d"
+  ],
+  "reason_code": "momentum_with_volume",
+  "action_label": "expand_and_protect",
+  "volume_verdict": "MIXED \u2014 no clear monotonic pattern.",
+  "momentum_verdict": "MIXED \u2014 no clear monotonic pattern.",
+  "timestamp": "2026-08-30T16:11:41.012591+00:00"
+}
