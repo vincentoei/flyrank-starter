@@ -1,0 +1,43 @@
+{
+  "random_split": [
+    {
+      "model": "baseline_rule",
+      "precision_at_10": 0.4,
+      "precision_at_50": 0.44,
+      "precision_at_100": 0.44,
+      "roc_auc": 0.5876000415720414,
+      "average_precision": 0.339968221373888,
+      "split": "random_split"
+    },
+    {
+      "model": "gradient_boosting",
+      "precision_at_10": 0.9,
+      "precision_at_50": 0.92,
+      "precision_at_100": 0.91,
+      "roc_auc": 0.8211322075851044,
+      "average_precision": 0.6479930243816443,
+      "split": "random_split"
+    }
+  ],
+  "grouped_cv": [
+    {
+      "model": "gradient_boosting",
+      "precision_at_10": 0.9199999999999999,
+      "precision_at_50": 0.796,
+      "precision_at_100": 0.728,
+      "roc_auc": 0.7304790707932478,
+      "average_precision": 0.48289499932266955,
+      "split": "grouped_cv"
+    },
+    {
+      "model": "baseline_rule",
+      "precision_at_10": 0.5,
+      "precision_at_50": 0.42799999999999994,
+      "precision_at_100": 0.4640000000000001,
+      "roc_auc": 0.5992798623485995,
+      "average_precision": 0.351238462062229,
+      "split": "grouped_cv"
+    }
+  ],
+  "timestamp": "2026-08-31T16:07:29.733233+00:00"
+}
