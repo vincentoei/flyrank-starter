@@ -1,0 +1,72 @@
+{
+  "queue_rows": 67478,
+  "action_counts": {
+    "monitor": 49437,
+    "optimize_snippet": 7328,
+    "expand_and_protect": 5232,
+    "deprioritize": 3965,
+    "refresh": 1516
+  },
+  "archetype_counts": {
+    "young_momentum": 22337,
+    "page_one_earner": 22217,
+    "other": 11380,
+    "striking_distance": 8828,
+    "mature_stale": 2633,
+    "thin_visible": 83
+  },
+  "age_tier_summary": [
+    {
+      "age_tier": "0-90",
+      "n": 24533,
+      "median_score": 0.542,
+      "pct_expand_protect": 0.207,
+      "pct_refresh": 0.0
+    },
+    {
+      "age_tier": "91-180",
+      "n": 11323,
+      "median_score": 0.284,
+      "pct_expand_protect": 0.013,
+      "pct_refresh": 0.0
+    },
+    {
+      "age_tier": "181-270",
+      "n": 20140,
+      "median_score": 0.222,
+      "pct_expand_protect": 0.0,
+      "pct_refresh": 0.013
+    },
+    {
+      "age_tier": "271-365",
+      "n": 5850,
+      "median_score": 0.501,
+      "pct_expand_protect": 0.0,
+      "pct_refresh": 0.185
+    },
+    {
+      "age_tier": "365+",
+      "n": 5632,
+      "median_score": 0.502,
+      "pct_expand_protect": 0.0,
+      "pct_refresh": 0.031
+    }
+  ],
+  "monitoring_triggers": {
+    "cv_precision_at_50_benchmark": 0.796,
+    "baseline_precision_at_50": 0.42799999999999994,
+    "retrain_trigger_cv_p50_drop": 0.696,
+    "feature_vector_refresh_frequency": "monthly",
+    "rolling_top50_alert_threshold": 0.42799999999999994,
+    "new_client_mix_alert_threshold": 0.2,
+    "queue_generated_at": "2026-08-31T17:33:50.239676+00:00"
+  },
+  "cost_value": {
+    "reviews_per_cycle": 50,
+    "expected_true_growers_model": 40,
+    "expected_true_growers_baseline": 21,
+    "additional_growers_per_50_reviews": 18,
+    "cost": "one human review per queued page (not automated)"
+  },
+  "timestamp": "2026-08-31T17:33:50.655315+00:00"
+}
