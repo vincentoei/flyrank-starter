@@ -1,0 +1,40 @@
+{
+  "analysis": "post_hoc_observed_march_and_april_only",
+  "original_rows": 67478,
+  "observed_rows": 64456,
+  "excluded_rows": 3022,
+  "client_groups": 43,
+  "base_growth_rate": 0.25890529973935705,
+  "split": "5-fold StratifiedGroupKFold by client_hash_id, random_state=42",
+  "metric": "mean held-out precision at 50 per fold",
+  "gradient_boosting_mean_precision_at_50": 0.892,
+  "baseline_rule_mean_precision_at_50": 0.42800000000000005,
+  "folds": [
+    {
+      "fold": 1,
+      "gradient_boosting_precision_at_50": 0.92,
+      "baseline_rule_precision_at_50": 0.22
+    },
+    {
+      "fold": 2,
+      "gradient_boosting_precision_at_50": 0.76,
+      "baseline_rule_precision_at_50": 0.36
+    },
+    {
+      "fold": 3,
+      "gradient_boosting_precision_at_50": 0.92,
+      "baseline_rule_precision_at_50": 0.42
+    },
+    {
+      "fold": 4,
+      "gradient_boosting_precision_at_50": 0.92,
+      "baseline_rule_precision_at_50": 0.56
+    },
+    {
+      "fold": 5,
+      "gradient_boosting_precision_at_50": 0.94,
+      "baseline_rule_precision_at_50": 0.58
+    }
+  ],
+  "note": "Sensitivity to absent monthly aggregates; post hoc, not a future-time holdout."
+}
