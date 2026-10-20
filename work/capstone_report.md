@@ -11,11 +11,13 @@
 
 ## Abstract
 
-Can search signals available by 31 March 2026 help a content team decide which pages to inspect for April impression growth? I constructed a page-level cohort from FlyRank's v20260703 internship warehouse using January–March performance and a future April label. A transparent momentum-and-volume rule and three classifiers were compared on the same five client-grouped validation folds. Gradient Boosting achieved mean Precision@50 of 79.6% versus 42.8% for the rule, against a 24.7% growth prevalence, although one held-out fold favored the rule. These rankings support human review of content opportunities; they do not show that editing a page causes growth.
+FlyRank's content team has limited time to inspect pages for expansion, promotion, or protection, so which pages should it review first for next-month search growth? Using 67,478 eligible pages from 45 pseudonymized client groups in FlyRank's v20260703 internship warehouse, I paired January–March signals available on 31 March 2026 with an April impression-growth label. I compared a transparent momentum-and-volume rule with three classifiers on the same five client-grouped validation folds, measuring the share of growth-labeled pages in each top-50 review queue. Gradient Boosting reached 79.6% mean Precision@50 versus 42.8% for the rule and a 24.7% positive-label prevalence, although one fold favored the rule. The result supports testing a human-review queue for content opportunities; it does not show that editing pages causes growth or that the ranking will hold in later months.
 
 ## 1. Problem framing
 
-A content team has limited review capacity. The unit is a page at the close of 31 March 2026; the output is a ranking score for which pages to inspect first for April impression growth. The human editor checks the page, search results, and business context before deciding to expand, refresh, improve a snippet, monitor, or defer work. A false positive consumes scarce review time; a false negative may delay attention to a useful page. Ranking helps allocate that capacity, but it does not prescribe edits automatically.
+FlyRank's original Growth Prediction question was how a content team with limited time could identify pages worth expanding, promoting, protecting, or monitoring. An editor facing many candidates and a 50-page review budget needs an order for inspection: reviewing an unpromising page costs time, while overlooking a promising one may delay useful attention. This case study tests whether information available before April could rank pages by their April search-impression growth label. The 50-page budget is the evaluation framing, not evidence that FlyRank deployed this queue.
+
+The unit is one eligible page at the close of 31 March 2026. The proposed output is a ranked human-review queue. An editor would still check each page, its live search results, and business context before deciding to expand, refresh, improve a snippet, monitor, or defer work. The ranking can prioritize inspection; it neither prescribes edits nor measures the effect of taking those actions.
 
 ## 2. Data and public safety
 
