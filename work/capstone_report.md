@@ -7,7 +7,7 @@
 **Decision date:** 31 March 2026
 
 **Repository:** [flyrank-starter](https://github.com/vincentoei/flyrank-starter)
-**Paper site:** deployment URL will be recorded in `submission/paper_url.txt`.
+**Paper site:** [flyrank-research](https://flyrank-research.vercel.app/)
 
 ## Abstract
 
